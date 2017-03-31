@@ -1,4 +1,4 @@
-# interfax-nodejs-samples
+# InterFAX NodeJS Samples
 
 This repo contains code samples for NodeJS for use with InterFAX API. 
 
