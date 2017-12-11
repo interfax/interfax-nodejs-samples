@@ -1,6 +1,6 @@
-let InterFAX = require('interfax');
+var InterFAX = require('interfax');
 
-let interfax = new InterFAX({
+var interfax = new InterFAX({
   username: 'your_username',
   password: 'your_password',
 });

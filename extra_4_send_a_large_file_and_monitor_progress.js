@@ -1,4 +1,4 @@
-import fs from 'fs';
+var fs = require('fs');
 
 fs.readFile('tests/test.pdf', uploadAndSend);
 
@@ -18,8 +18,8 @@ function upload(cursor = 0, document, data) {
     sendFax(document);
   }
 
-  let chunk       = data.slice(cursor, cursor+500);
-  let next_cursor = cursor+Buffer.byteLength(chunk);
+  var chunk       = data.slice(cursor, cursor+500);
+  var next_cursor = cursor+Buffer.byteLength(chunk);
 
   interfax.documents.upload(
     document.id,
